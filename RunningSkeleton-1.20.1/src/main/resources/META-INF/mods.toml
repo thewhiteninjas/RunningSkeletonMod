@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="MIT"
+
+[[dependencies.runningskeleton]]
+    modId="forge"
+    mandatory=true
+    versionRange="${forge_version_range}"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies.runningskeleton]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="CLIENT"
+
+[[mods]]
+modId="runningskeleton"
+version="${file.jarVersion}"
+displayName="RunningSkeleton"
+description='''
+A mod that randomly shows a running skeleton animation on screen.
+Use /skeleton chance <number>, /skeleton show, /skeleton info to configure.
+'''
