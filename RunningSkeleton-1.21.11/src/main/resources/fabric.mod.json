@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "runningskeleton",
+  "version": "${version}",
+  "name": "RunningSkeleton",
+  "description": "Plays a fullscreen jumpscare-style animation with a configurable random chance, triggered every second.",
+  "authors": [
+    "TheWhiteNinja"
+  ],
+  "contact": {},
+  "license": "CC0-1.0",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.thewhiteninja.runningskeleton.client.RunningSkeletonClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.5",
+    "minecraft": "1.21.11",
+    "fabric-api": "*",
+    "java": ">=21"
+  }
+}

@@ -1,2 +1,19 @@
-Here I'll upload terrible mods made with Claude Code or things like that because I don't know anything about code or creating mods for now.
-Aqui subire mods bodrios hechos con Claude code o cosas asi porque no se nada de codigo ni de crear mods por ahora
+
+# Welcome to my first mod!!
+
+its literally just a skeleton running xd
+
+## You can use this commands:
+
+1.  /skeleton chance (number)
+    
+2.  /skeleton show
+    
+3.  /skeleton info 
+    
+
+  
+
+(the mod was maked using claude code because i dont know how to create mods for now)
+
+I may create more mods like this like elephants gifs or smth like that
