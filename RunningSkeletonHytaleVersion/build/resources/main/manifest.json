@@ -1,0 +1,25 @@
+{
+    "Group": "TheWhiteNinja",
+    "Name": "RunningSkeleton",
+    "Version": "1.0",
+    "Description": "[1-2000] chance for a Skeleton to Run Across Your Screen (configurable)",
+    "Authors": [
+        {
+            "Name": "TheWhiteNinja"
+        }
+    ],
+    "Website": "https://github.com/thewhiteninjas/RunningSkeletonMod",
+    "DisabledByDefault": false,
+    "IncludesAssetPack": true,
+    "Dependencies": {
+        "Hytale:AssetModule": "*"
+    },
+    "OptionalDependencies": {
+        
+    },
+    "ServerVersion": ">=0.5.7 <0.6.0",
+    "Main": "com.thewhiteninja.runningskeleton.RunningSkeletonPlugin",
+    "UpdateChecker": {
+        "CurseForge": ""
+    }
+}

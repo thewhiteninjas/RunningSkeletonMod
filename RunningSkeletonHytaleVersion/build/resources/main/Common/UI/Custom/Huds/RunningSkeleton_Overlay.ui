@@ -1,0 +1,89 @@
+Group #RunningSkeletonRoot {
+  Anchor: (Full: 0);
+  HitTestVisible: false;
+
+  Group #Frame01 {
+    Anchor: (Full: 0);
+    HitTestVisible: false;
+    Visible: true;
+    Background: (TexturePath: "Frames/frame_01.png");
+  }
+  Group #Frame02 {
+    Anchor: (Full: 0);
+    HitTestVisible: false;
+    Visible: false;
+    Background: (TexturePath: "Frames/frame_02.png");
+  }
+  Group #Frame03 {
+    Anchor: (Full: 0);
+    HitTestVisible: false;
+    Visible: false;
+    Background: (TexturePath: "Frames/frame_03.png");
+  }
+  Group #Frame04 {
+    Anchor: (Full: 0);
+    HitTestVisible: false;
+    Visible: false;
+    Background: (TexturePath: "Frames/frame_04.png");
+  }
+  Group #Frame05 {
+    Anchor: (Full: 0);
+    HitTestVisible: false;
+    Visible: false;
+    Background: (TexturePath: "Frames/frame_05.png");
+  }
+  Group #Frame06 {
+    Anchor: (Full: 0);
+    HitTestVisible: false;
+    Visible: false;
+    Background: (TexturePath: "Frames/frame_06.png");
+  }
+  Group #Frame07 {
+    Anchor: (Full: 0);
+    HitTestVisible: false;
+    Visible: false;
+    Background: (TexturePath: "Frames/frame_07.png");
+  }
+  Group #Frame08 {
+    Anchor: (Full: 0);
+    HitTestVisible: false;
+    Visible: false;
+    Background: (TexturePath: "Frames/frame_08.png");
+  }
+  Group #Frame09 {
+    Anchor: (Full: 0);
+    HitTestVisible: false;
+    Visible: false;
+    Background: (TexturePath: "Frames/frame_09.png");
+  }
+  Group #Frame10 {
+    Anchor: (Full: 0);
+    HitTestVisible: false;
+    Visible: false;
+    Background: (TexturePath: "Frames/frame_10.png");
+  }
+  Group #Frame11 {
+    Anchor: (Full: 0);
+    HitTestVisible: false;
+    Visible: false;
+    Background: (TexturePath: "Frames/frame_11.png");
+  }
+  Group #Frame12 {
+    Anchor: (Full: 0);
+    HitTestVisible: false;
+    Visible: false;
+    Background: (TexturePath: "Frames/frame_12.png");
+  }
+  Group #Frame13 {
+    Anchor: (Full: 0);
+    HitTestVisible: false;
+    Visible: false;
+    Background: (TexturePath: "Frames/frame_13.png");
+  }
+  Group #Frame14 {
+    Anchor: (Full: 0);
+    HitTestVisible: false;
+    Visible: false;
+    Background: (TexturePath: "Frames/frame_14.png");
+  }
+}
