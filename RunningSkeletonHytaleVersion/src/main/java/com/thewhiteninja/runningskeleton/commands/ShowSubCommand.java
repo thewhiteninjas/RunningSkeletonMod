@@ -19,12 +19,6 @@ public class ShowSubCommand extends AbstractPlayerCommand {
     public ShowSubCommand(@Nonnull SkeletonAnimationService animationService) {
         super("show", "Immediately play the skeleton animation, ignoring the random chance");
         this.animationService = animationService;
-        this.requirePermission("runningskeleton.admin.show");
-    }
-
-    @Override
-    protected boolean canGeneratePermission() {
-        return false;
     }
 
     @Override

@@ -26,8 +26,7 @@ import java.util.concurrent.TimeUnit;
 public class SkeletonAnimationService {
 
     private static final int ANIMATION_FRAME_COUNT = 14;
-    private static final long ANIMATION_TOTAL_DURATION_MILLIS = 1000L;
-    private static final long FRAME_INTERVAL_MILLIS = ANIMATION_TOTAL_DURATION_MILLIS / ANIMATION_FRAME_COUNT;
+    private static final long ANIMATION_TOTAL_DURATION_MILLIS = 2000L;
 
     private final JavaPlugin plugin;
     private final Config<RunningSkeletonConfig> config;
@@ -83,6 +82,7 @@ public class SkeletonAnimationService {
         }
 
         this.sessions.remove(playerRef.getUuid());
+        this.cooldownUntilMillis.remove(playerRef.getUuid());
     }
 
     private void tick() {
@@ -125,12 +125,13 @@ public class SkeletonAnimationService {
 
         Store<EntityStore> store = ref.getStore();
         World world = store.getExternalData().getWorld();
+        long startMillis = System.currentTimeMillis();
 
-        world.execute(() -> this.playFrame(ref, store, world, 1));
+        world.execute(() -> this.playFrame(ref, store, world, 1, startMillis));
     }
 
     private void playFrame(@Nonnull Ref<EntityStore> ref, @Nonnull Store<EntityStore> store,
-                            @Nonnull World world, int frameNumber) {
+                            @Nonnull World world, int frameNumber, long startMillis) {
         if (!ref.isValid()) {
             return;
         }
@@ -148,9 +149,12 @@ public class SkeletonAnimationService {
 
         player.getHudManager().addCustomHud(playerRef, new SkeletonRunHud(playerRef, frameNumber));
 
+        long targetMillis = startMillis + Math.round(frameNumber * (ANIMATION_TOTAL_DURATION_MILLIS / (double) ANIMATION_FRAME_COUNT));
+        long delayMillis = Math.max(0, targetMillis - System.currentTimeMillis());
+
         this.scheduler.schedule(
-                () -> world.execute(() -> this.playFrame(ref, store, world, frameNumber + 1)),
-                FRAME_INTERVAL_MILLIS,
+                () -> world.execute(() -> this.playFrame(ref, store, world, frameNumber + 1, startMillis)),
+                delayMillis,
                 TimeUnit.MILLISECONDS
         );
     }

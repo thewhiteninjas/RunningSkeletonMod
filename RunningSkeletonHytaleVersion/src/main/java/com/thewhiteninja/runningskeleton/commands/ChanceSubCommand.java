@@ -21,12 +21,6 @@ public class ChanceSubCommand extends AbstractCommand {
     public ChanceSubCommand(@Nonnull Config<RunningSkeletonConfig> config) {
         super("chance", "Set the probability of the skeleton event, for example 2000 means 1 in 2000");
         this.config = config;
-        this.requirePermission("runningskeleton.admin.chance");
-    }
-
-    @Override
-    protected boolean canGeneratePermission() {
-        return false;
     }
 
     @Nullable

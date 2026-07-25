@@ -254,12 +254,12 @@ end), since both HUD instances share the same HUD id (`"RunningSkeleton"`).
 
 ## Commands
 
-All commands are subcommands of `/skeleton`.
+All commands are subcommands of `/skeleton` and are open to any player or
+console user — no permission node is required for any of them.
 
 ### `/skeleton chance <number>`
 
-Sets the probability denominator. Requires the `runningskeleton.admin.chance`
-permission.
+Sets the probability denominator.
 
 ```
 /skeleton chance 2000
@@ -271,7 +271,7 @@ Sets the chance to 1 in 2000 per second.
 
 Immediately plays the fullscreen animation for the executing player,
 completely ignoring the random chance (the cooldown is still applied
-afterward). Requires the `runningskeleton.admin.show` permission.
+afterward).
 
 ```
 /skeleton show
@@ -336,10 +336,6 @@ Your cooldown is currently not active.
   internet access.
 - **Permission denied on `./gradlew`.**
   Run `chmod +x gradlew` on macOS/Linux.
-- **Commands report "no permission".**
-  Grant `runningskeleton.admin.chance` and `runningskeleton.admin.show` to
-  the relevant players or operator group through your server's permission
-  system. `/skeleton info` is unrestricted.
 - **`/skeleton` says "Unknown command".**
   This means the plugin never finished loading, or the jar you installed is
   stale. Rebuild with `./gradlew build`, reinstall the fresh jar, and check
