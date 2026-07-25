@@ -1,3 +1,4 @@
+<img width="400" height="224" alt="image" src="https://github.com/user-attachments/assets/4558cba2-2897-4dc7-8c62-aa8b7f8996cb" />
 
 # Welcome to my first mod!!
 
