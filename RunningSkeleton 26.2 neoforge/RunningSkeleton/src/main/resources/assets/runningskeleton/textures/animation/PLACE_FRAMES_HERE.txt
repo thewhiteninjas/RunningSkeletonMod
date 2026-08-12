@@ -1,0 +1,21 @@
+Place the 14 animation frames in this exact folder, using these exact file names:
+
+frame_01.png
+frame_02.png
+frame_03.png
+frame_04.png
+frame_05.png
+frame_06.png
+frame_07.png
+frame_08.png
+frame_09.png
+frame_10.png
+frame_11.png
+frame_12.png
+frame_13.png
+frame_14.png
+
+Each image must be a 1024x1024 PNG. Delete this file once the 14 frames are in place
+(it is not read by the mod and will simply be ignored if left here).
+
+See README.md for full details.

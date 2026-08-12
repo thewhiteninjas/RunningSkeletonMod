@@ -1,0 +1,28 @@
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="${mod_author}"
+description='''
+RunningSkeleton is a client-side mod that occasionally flashes a full-screen
+running skeleton animation while playing Minecraft.
+'''
+# This mod only ever runs code on the physical client (see the @Mod dist=Dist.CLIENT
+# annotation on RunningSkeletonMod), so it is safe to have on servers as well:
+# it will simply not load there.
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="CLIENT"

@@ -1,0 +1,22 @@
+Coloca aqui los 14 archivos PNG de la animacion (1024x1024 cada uno):
+
+frame_01.png
+frame_02.png
+frame_03.png
+frame_04.png
+frame_05.png
+frame_06.png
+frame_07.png
+frame_08.png
+frame_09.png
+frame_10.png
+frame_11.png
+frame_12.png
+frame_13.png
+frame_14.png
+
+Ruta completa desde la raiz del proyecto:
+src/client/resources/assets/runningskeleton/textures/gui/skeleton/
+
+Una vez copiadas las imagenes, borra este archivo de texto (es solo un marcador,
+no se usa en el codigo ni se compila dentro del jar de forma funcional).

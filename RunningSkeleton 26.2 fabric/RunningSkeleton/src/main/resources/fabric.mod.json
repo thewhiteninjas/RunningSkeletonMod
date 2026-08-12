@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "runningskeleton",
+  "version": "${version}",
+  "name": "RunningSkeleton",
+  "description": "Displays a full-screen running skeleton animation at random, client-side only.",
+  "authors": [
+    "TheWhiteNinja"
+  ],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.thewhiteninja.runningskeleton.client.RunningSkeletonClient"
+    ]
+  },
+  "license": "MIT",
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
