@@ -1,0 +1,26 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "runningskeleton"
+version = "2.0.0"
+displayName = "RunningSkeleton"
+authors = "TheWhiteNinja"
+description = '''
+Did you see that? A configurable one in 2000 running skeleton mod.
+'''
+
+[[dependencies.runningskeleton]]
+modId = "neoforge"
+type = "required"
+versionRange = "[26.2.0,26.3)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.runningskeleton]]
+modId = "minecraft"
+type = "required"
+versionRange = "[26.2]"
+ordering = "NONE"
+side = "CLIENT"

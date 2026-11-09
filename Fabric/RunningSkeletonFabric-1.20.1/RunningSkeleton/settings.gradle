@@ -1,0 +1,17 @@
+pluginManagement {
+	repositories {
+		// Mirror first: some networks cannot reach maven.fabricmc.net directly.
+		maven {
+			name = 'Fabric Mirror'
+			url = 'https://fabricmc.forgecdn.net/'
+		}
+		maven {
+			name = 'Fabric'
+			url = 'https://maven.fabricmc.net/'
+		}
+		mavenCentral()
+		gradlePluginPortal()
+	}
+}
+
+rootProject.name = 'runningskeleton'

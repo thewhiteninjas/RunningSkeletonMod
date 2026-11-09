@@ -1,0 +1,64 @@
+plugins {
+	id 'fabric-loom' version '1.6-SNAPSHOT'
+	id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.mod_group_id
+
+base {
+	archivesName = project.mod_id
+}
+
+repositories {
+	// Loom adds the Minecraft and Fabric repositories automatically; the mirror is a fallback
+	// for networks that cannot reach maven.fabricmc.net.
+	maven {
+		name = 'Fabric Mirror'
+		url = 'https://fabricmc.forgecdn.net/'
+	}
+}
+
+loom {
+	// Client-only code lives in src/client, common code in src/main.
+	splitEnvironmentSourceSets()
+
+	mods {
+		"runningskeleton" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings loom.officialMojangMappings()
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+}
+
+processResources {
+	def modVersion = project.version
+	inputs.property "version", modVersion
+
+	filesMatching("fabric.mod.json") {
+		expand "version": modVersion
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 17
+	it.options.encoding = "UTF-8"
+}
+
+java {
+	withSourcesJar()
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
+}
+
+jar {
+	def projectName = project.name
+	inputs.property "projectName", projectName
+}

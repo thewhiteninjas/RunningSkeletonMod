@@ -1,0 +1,11 @@
+{
+  "elephant": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "elephantgreenscreeneffect:elephant",
+        "stream": true
+      }
+    ]
+  }
+}

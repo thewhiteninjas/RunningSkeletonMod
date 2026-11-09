@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "runningskeleton",
+	"version": "${version}",
+	"name": "RunningSkeleton",
+	"description": "Did you see that? A configurable one in 2000 running skeleton mod.",
+	"authors": [
+		"TheWhiteNinja"
+	],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"com.thewhiteninja.runningskeleton.RunningSkeletonMod"
+		],
+		"client": [
+			"com.thewhiteninja.runningskeleton.client.RunningSkeletonClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": [
+			"26.1",
+			"26.1.1",
+			"26.1.2"
+		],
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

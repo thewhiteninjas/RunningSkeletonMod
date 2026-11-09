@@ -1,0 +1,8 @@
+Place the 79 animation frames in this folder (1024x1024 PNG each):
+
+    frame_0001.png
+    frame_0002.png
+    ...
+    frame_0079.png
+
+You can delete this text file once the frames are in place.
